@@ -8,6 +8,16 @@ This project compares three forecasting paradigms across two daily retail-demand
 
 The goal is to study whether model rankings observed on a relatively simple public benchmark transfer to a richer, more industrial-style forecasting setting, and how the models differ in **accuracy, uncertainty, and computational cost**.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/umarhasany/time-series-forecasting-benchmark/blob/main/notebooks/forecasting_benchmark.ipynb)
+
+**Notebook:** [notebooks/forecasting_benchmark.ipynb](notebooks/forecasting_benchmark.ipynb)
+
+### At a Glance
+
+- **Chronos-2** delivered the best Store-Item point accuracy: **13.77% sMAPE**, **12.07% WAPE**, **6.94 RMSE**.
+- On **M5**, the ranking became metric-dependent: **ETS won sMAPE**, **Chronos-2 won WAPE**, and **LightGBM won RMSE**.
+- **LightGBM** had the lowest inference cost on both datasets, while adding M5 price/event/SNAP covariates did **not** consistently improve accuracy.
+
 ## Research Questions
 
 1. Do statistical, machine-learning, and foundation-model rankings remain stable across datasets?
@@ -153,6 +163,11 @@ Lower is better for all three metrics.
 | M5 | LightGBM | Machine Learning | 141.22% | 78.85% | **2.06** |
 | M5 | Chronos-2 | Foundation Model | 162.30% | **67.90%** | 2.08 |
 
+<p align="center">
+  <img src="figures/store_item_accuracy.svg" width="49%" alt="Store-Item accuracy comparison">
+  <img src="figures/m5_accuracy.svg" width="49%" alt="M5 accuracy comparison">
+</p>
+
 ### Store-Item Ranking
 
 All three accuracy metrics produce the same ranking:
@@ -197,6 +212,10 @@ Target coverage is 80%.
 | M5 | LightGBM | Conformal residual | 80.80% | 2.10 |
 | M5 | Chronos-2 | Native quantiles | 78.64% | 2.65 |
 
+<p align="center">
+  <img src="figures/uncertainty_coverage.svg" width="88%" alt="Prediction interval coverage comparison">
+</p>
+
 ### Interpretation
 
 On the Store-Item dataset:
@@ -224,6 +243,10 @@ Interval widths should only be compared **within the same dataset**, because the
 | M5 | ETS | 215.50 s | 20.44 s |
 | M5 | LightGBM | 15.64 s | **0.50 s** |
 | M5 | Chronos-2 | 0 s local fitting | 5.99 s |
+
+<p align="center">
+  <img src="figures/inference_time.svg" width="88%" alt="Inference time comparison">
+</p>
 
 LightGBM is the fastest inference approach by a large margin on both datasets.
 
@@ -333,7 +356,10 @@ time-series-forecasting-benchmark/
 │   ├── computational_cost.csv
 │   └── covariate_results.csv
 └── figures/
-    └── ...
+    ├── store_item_accuracy.svg
+    ├── m5_accuracy.svg
+    ├── uncertainty_coverage.svg
+    └── inference_time.svg
 ```
 
 ## Reproducing the Project
@@ -415,6 +441,6 @@ Université Claude Bernard Lyon 1
 - GitHub: https://github.com/umarhasany
 - LinkedIn: https://www.linkedin.com/in/uhasany/
 
-## License
+## Dataset and Usage Notes
 
-This repository is intended for educational, research, and portfolio use. Dataset usage remains subject to the terms of the original dataset providers.
+The code and analysis are provided for educational, research, and portfolio purposes. The datasets are not redistributed in this repository; their use remains subject to the terms of the original dataset providers.
