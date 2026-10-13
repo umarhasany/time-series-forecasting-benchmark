@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#ffffff"/>
+  <text x="500" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">80% Prediction-Interval Coverage</text>
+  <text x="500" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">Bars closer to the dashed 80% target indicate better calibration</text>
+
+  <g stroke="#e5e7eb">
+    <line x1="110" y1="500" x2="920" y2="500"/>
+    <line x1="110" y1="420" x2="920" y2="420"/>
+    <line x1="110" y1="340" x2="920" y2="340"/>
+    <line x1="110" y1="260" x2="920" y2="260"/>
+    <line x1="110" y1="180" x2="920" y2="180"/>
+    <line x1="110" y1="100" x2="920" y2="100"/>
+  </g>
+  <g font-family="Arial" font-size="13" fill="#6b7280" text-anchor="end">
+    <text x="98" y="505">60%</text><text x="98" y="425">65%</text><text x="98" y="345">70%</text>
+    <text x="98" y="265">75%</text><text x="98" y="185">80%</text><text x="98" y="105">85%</text>
+  </g>
+  <line x1="110" y1="180" x2="920" y2="180" stroke="#dc2626" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="910" y="169" text-anchor="end" font-family="Arial" font-size="13" fill="#dc2626">Target 80%</text>
+
+  <!-- Store-Item -->
+  <rect x="190" y="416.0" width="70" height="84.0" rx="4" fill="#2563eb"/>
+  <rect x="275" y="96.8" width="70" height="403.2" rx="4" fill="#16a34a"/>
+  <rect x="360" y="163.4" width="70" height="336.6" rx="4" fill="#f59e0b"/>
+  <text x="310" y="540" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#111827">Store-Item</text>
+  <g font-family="Arial" font-size="12" fill="#111827" text-anchor="middle">
+    <text x="225" y="407">65.25%</text><text x="310" y="89">85.20%</text><text x="395" y="155">81.04%</text>
+  </g>
+
+  <!-- M5 -->
+  <rect x="585" y="175.7" width="70" height="324.3" rx="4" fill="#2563eb"/>
+  <rect x="670" y="167.2" width="70" height="332.8" rx="4" fill="#16a34a"/>
+  <rect x="755" y="201.8" width="70" height="298.2" rx="4" fill="#f59e0b"/>
+  <text x="705" y="540" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#111827">M5</text>
+  <g font-family="Arial" font-size="12" fill="#111827" text-anchor="middle">
+    <text x="620" y="168">80.27%</text><text x="705" y="159">80.80%</text><text x="790" y="194">78.64%</text>
+  </g>
+
+  <g font-family="Arial" font-size="14" fill="#111827">
+    <rect x="330" y="575" width="16" height="16" rx="2" fill="#2563eb"/><text x="354" y="588">ETS</text>
+    <rect x="430" y="575" width="16" height="16" rx="2" fill="#16a34a"/><text x="454" y="588">LightGBM</text>
+    <rect x="565" y="575" width="16" height="16" rx="2" fill="#f59e0b"/><text x="589" y="588">Chronos-2</text>
+  </g>
+</svg>
