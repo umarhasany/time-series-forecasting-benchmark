@@ -1,10 +1,10 @@
 # Figures
 
-Add exported figures used in the README or final report here.
+This folder contains the presentation-ready figures embedded in the root README.
 
-Recommended figures:
+- `store_item_accuracy.svg` - Store-Item sMAPE, WAPE, and RMSE comparison
+- `m5_accuracy.svg` - M5 metric-by-metric comparison
+- `uncertainty_coverage.svg` - observed coverage against the 80% target
+- `inference_time.svg` - inference-time comparison across both datasets
 
-- accuracy_comparison.png
-- uncertainty_comparison.png
-- computational_cost.png
-- cross_dataset_comparison.png
+All values shown in the figures come from the measured benchmark results stored in `../results/`.
