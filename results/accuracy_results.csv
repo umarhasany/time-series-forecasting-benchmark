@@ -1,0 +1,7 @@
+dataset,model,category,smape,wape,rmse
+Store-Item,ETS,Statistical,23.56,23.20,12.56
+Store-Item,LightGBM,Machine Learning,13.99,12.39,7.16
+Store-Item,Chronos-2,Foundation Model,13.77,12.07,6.94
+M5,ETS,Statistical,139.46,75.59,2.28
+M5,LightGBM,Machine Learning,141.22,78.85,2.06
+M5,Chronos-2,Foundation Model,162.30,67.90,2.08
