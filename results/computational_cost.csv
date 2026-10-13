@@ -1,0 +1,7 @@
+dataset,model,fit_time_seconds,inference_time_seconds
+Store-Item,ETS,262.80,21.46
+Store-Item,LightGBM,21.91,0.60
+Store-Item,Chronos-2,0.00,7.15
+M5,ETS,215.50,20.44
+M5,LightGBM,15.64,0.50
+M5,Chronos-2,0.00,5.99
