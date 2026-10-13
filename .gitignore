@@ -1,0 +1,28 @@
+# Data files
+data/
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+
+# Model and Hugging Face caches
+.cache/
+huggingface/
+models/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
