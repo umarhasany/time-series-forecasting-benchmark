@@ -1,25 +1,20 @@
 # Notebook
 
-Export the final cleaned Google Colab notebook as:
+The cleaned, reproducible project notebook is:
 
-`forecasting_benchmark.ipynb`
+- `forecasting_benchmark.ipynb`
 
-and place it in this directory.
+It contains the full benchmark workflow for:
 
-Before uploading, remove runtime-recovery cells, duplicate imports, failed API attempts, and temporary debugging output. Keep the notebook organized around:
+- Store Item Demand Forecasting
+- M5 sampled retail-demand forecasting
+- ETS
+- LightGBM
+- Chronos-2
+- the M5 external-covariate experiment
+- uncertainty calibration
+- cross-dataset conclusions
 
-1. Objective and setup
-2. Metrics
-3. Store-Item dataset
-4. ETS
-5. LightGBM
-6. Chronos-2
-7. Store-Item comparison
-8. M5 dataset
-9. ETS
-10. LightGBM
-11. Chronos-2
-12. External covariate experiment
-13. Uncertainty evaluation
-14. Cross-dataset comparison
-15. Conclusions
+The notebook intentionally excludes the original debugging cells, repeated package-install cells, runtime-recovery cells, and failed intermediate experiments.
+
+Dataset files are not stored in the repository. Follow the root README for setup instructions.
