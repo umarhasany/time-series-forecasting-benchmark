@@ -1,0 +1,3 @@
+variant,smape,wape,rmse,fit_time_seconds,inference_time_seconds
+LightGBM - Historical features,141.22,78.85,2.06,15.64,0.50
+LightGBM + Price Event SNAP,141.03,80.95,2.11,16.24,1.57
