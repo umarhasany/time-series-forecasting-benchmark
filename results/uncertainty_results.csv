@@ -1,0 +1,7 @@
+dataset,model,method,target_coverage_percent,observed_coverage_percent,mean_interval_width
+Store-Item,ETS,Conformal residual,80,65.25,23.90
+Store-Item,LightGBM,Conformal residual,80,85.20,20.07
+Store-Item,Chronos-2,Native quantiles,80,81.04,17.54
+M5,ETS,Conformal residual,80,80.27,1.98
+M5,LightGBM,Conformal residual,80,80.80,2.10
+M5,Chronos-2,Native quantiles,80,78.64,2.65
